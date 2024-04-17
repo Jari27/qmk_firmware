@@ -1,6 +1,7 @@
 # Vial setup
 VIA_ENABLE = no
 VIAL_ENABLE = no
+# VIALRGB_ENABLE = yes
 
 # disable encoders
 ENCODER_ENABLE = no
@@ -10,7 +11,6 @@ ENCODER_MAP_ENABLE = no
 OLED_ENABLE = yes
 
 # Leds (disabled because can accidentally consume too much power)
-# VIALRGB_ENABLE = yes
 RGBLIGHT_ENABLE = no
 
 ## build targets
