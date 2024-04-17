@@ -15,6 +15,7 @@
 
 // normal rgb stuff
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 128
+
 // remove rgblight animations
 #undef RGBLIGHT_ANIMATIONS
 #undef RGBLIGHT_EFFECT_BREATHING
@@ -44,8 +45,6 @@
 #define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
 #define ENABLE_RGB_MATRIX_MULTISPLASH
-// custom animation
-// #define JARI_CUSTOM_STARTUP
 
 // caps word
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
