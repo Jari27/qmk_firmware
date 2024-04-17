@@ -1,5 +1,8 @@
 #pragma once
 
+#undef PRODUCT
+#define PRODUCT "Jari's Aurora Lily58"
+
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 #define VIAL_KEYBOARD_UID {0x0B, 0x9F, 0x90, 0x91, 0x81, 0x04, 0x83, 0xB1}
 /* Vial secure unlock - currently using both big keys, like with base lily58 */
@@ -11,9 +14,8 @@
 #undef LOCKING_RESYNC_ENABLE
 
 // normal rgb stuff
-#define RGBLIGHT_LIMIT_VAL 128
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 128
-// remove non-used animations
+// remove rgblight animations
 #undef RGBLIGHT_ANIMATIONS
 #undef RGBLIGHT_EFFECT_BREATHING
 #undef RGBLIGHT_EFFECT_RAINBOW_MOOD
@@ -27,8 +29,7 @@
 #undef RGBLIGHT_EFFECT_TWINKLE
 
 // let's add the animations back
-#define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
-#define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
+#define ENABLE_RGB_MATRIX_SOLID_COLOR
 #define ENABLE_RGB_MATRIX_BREATHING
 #define ENABLE_RGB_MATRIX_BAND_SAT
 #define ENABLE_RGB_MATRIX_BAND_VAL
@@ -43,9 +44,11 @@
 #define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
 #define ENABLE_RGB_MATRIX_MULTISPLASH
+// custom animation
+// #define JARI_CUSTOM_STARTUP
 
 // caps word
-#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 // combo
 #define COMBO_TERM 15
